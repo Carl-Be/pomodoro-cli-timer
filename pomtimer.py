@@ -11,7 +11,8 @@ Description: This is a cli Linux pomodoro technique timer
 """
 from time import sleep 
 import subprocess as sp
-from playsound import playsound as ps  
+from pydub import AudioSegment
+from pydub.playback import play 
 from asciiArt import asciiArt
 
 
@@ -109,7 +110,12 @@ def timer(modeCount, time):
 
 #plays aduio sound 
 def playAudio():
-
+    mp3File = "./alarmsound.mp3"
+    alarmsound = AudioSegment.from_mp3(mp3File)
+    lastTenSeconds = alarmsound[:10000]
+    play(lastTenSeconds)
+    
+    
     return 
 
 def checkIntialTime(modeCount, time):
