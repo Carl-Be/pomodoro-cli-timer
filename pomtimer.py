@@ -2,7 +2,7 @@
 """
 Author: Carl-Be
 Created: 8/13/2020
-Updated: 8/13/2020
+Updated: 8/15/2020
 Version: 1
 
 Run: ./pomtimer.py 
