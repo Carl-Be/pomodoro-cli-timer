@@ -15,10 +15,6 @@ from pydub import AudioSegment
 from pydub.playback import play 
 from asciiArt import asciiArt
 
-
-
-
-
 # gets the time input from the user  
 def askForInput(logicalMode, breakType):
     
@@ -114,7 +110,7 @@ def timer(modeCount, time):
 
     while timeModeList[1] >= 0: # while time is not less than zero. Zero minuets is the end goal   
 
-        displayController(timeModeList) # get the is play 
+        displayController(timeModeList) # get the display 
         timeModeList[1] -= 1 # subtract one from time
         clearScreen() # clear the screen from the previous time 
         checkModeChange(timeModeList) # check to see if time is up or not
